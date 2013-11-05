@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="en">
 <!--
-	So, you wanted to know how is it created? Well, there is a pretty awesome
-	JavaScript library called Impress.js to create awesome presentations. 
-	Here: https://github.com/bartaz/impress.js/ learn it from the guru.
+  So, you wanted to know how is it created? Well, there is a pretty awesome
+  JavaScript library called Impress.js to create awesome presentations. 
+  Here: https://github.com/bartaz/impress.js/ learn it from the guru.
 
-	Still wanted to know how I did it? Keep on reading
+  Still wanted to know how I did it? Keep on reading
 -->
 <head>
     <meta charset="utf-8" />
@@ -19,26 +19,26 @@
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
     <link href="css/impress-demo1.css" rel="stylesheet" />    
     
-		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 
-		<!-- 
-		This is tiny funny script to keep changing the favicons randomly everytime you refresh the page. ;)
-		-->
-		<script>
-			window.onload = function(){
-				var rand = Math.floor(Math.random()*10);
-				var h = document.getElementsByTagName('head')[0];
-				h.insertAdjacentHTML('afterbegin', '<link rel="shortcut icon" href="fav_'+ rand+ '.png" />');
-			}
-		</script>
+    <!-- 
+    This is tiny funny script to keep changing the favicons randomly everytime you refresh the page. ;)
+    -->
+    <script>
+      window.onload = function(){
+        var rand = Math.floor(Math.random()*10);
+        var h = document.getElementsByTagName('head')[0];
+        h.insertAdjacentHTML('afterbegin', '<link rel="shortcut icon" href="fav_'+ rand+ '.png" />');
+      }
+    </script>
 
 </head>
 
 <body class="impress-not-supported">
-	<!-- for the poor souls with Internet Explorer 6 as their god. -->
-	<div class="fallback-message">
-		<p>Argh... you are missing some cool visulization. Unless you are living in a cave, you might want to see the world has actually moved a lot ahead since the last you craned your neck out of your cave</p>
-		<p>If you are so stubburn to not to leave your beloved archaic browser, you can know me from my <a href="http://about.me/naishe">About.me</a> page</p>
+  <!-- for the poor souls with Internet Explorer 6 as their god. -->
+  <div class="fallback-message">
+    <p>Argh... you are missing some cool visulization. Unless you are living in a cave, you might want to see the world has actually moved a lot ahead since the last you craned your neck out of your cave</p>
+    <p>If you are so stubburn to not to leave your beloved archaic browser, you can know me from my <a href="http://about.me/naishe">About.me</a> page</p>
     <p>Your browser <b>doesn't support the features required</b> by impress.js.</p>
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
 </div>
@@ -57,16 +57,16 @@
     -->
     <div id="namaste" class="step" data-x="-1000" data-y="-1000" data-scale="4">
         <span class="try">Hi! I am</span>
-				<h1>Nishant<sup><span style="color:red">*</span></sup></h1>
+        <h1>Nishant<sup><span style="color:red">*</span></sup></h1>
         <span class="footnote"><sup>*</sup> a.k.a. naish&eacute;</span>
     </div>
-		
-		<!--
-			An example of rotate, and translate. 
+    
+    <!--
+      An example of rotate, and translate. 
 
-			I moved the object's top left corner to 2300 units to left to the center and 2500 down. 
-			Also, I rotated it to create the first leg of N.
-	  -->
+      I moved the object's top left corner to 2300 units to left to the center and 2500 down. 
+      Also, I rotated it to create the first leg of N.
+    -->
 
     <div id="IMA" class="step" data-x="-2300" data-y="2500" data-rotate="90" data-scale="5">
         <p class="ima"><b>I AM</b></p>
@@ -74,30 +74,30 @@
         <p class="moveright moveright2">a freelance software developer |||||</p>
     </div>
 
-		<!--
-			Rotating along, X, Y and Z axes can create amazing effect.
-			Since I did not want to throw the book to the face of the end user, I kept it a bit shy.
-			Sticking at a 30 degrees slant. The axis of rotation is Y.
+    <!--
+      Rotating along, X, Y and Z axes can create amazing effect.
+      Since I did not want to throw the book to the face of the end user, I kept it a bit shy.
+      Sticking at a 30 degrees slant. The axis of rotation is Y.
 
-			I dipped it a bit down in Z axis to avoid it shadowing the previous div.
-		-->
-		<div id="I-wrote-a-sonnet" class="step" data-x="-3000" data-y="2250" data-rotate="90" data-rotate-y="-30" data-z="-150" data-scale="5">
-			<div class="bookouter">
-				<img class="book_img" src="http://dgdsbygo8mp3h.cloudfront.net/sites/default/files/imagecache/productview_larger/2681OS.jpg" />
-				<div class="book_desc">
-					<p>I happen to be the author of</p>
-					<p><a href="http://www.amazon.com/Mastering-Apache-Cassandra-Nishant-Neeraj/dp/1782162682" target="_blank">Mastering Apache Cassandra</a></p>
-				</div>
-			</div>
+      I dipped it a bit down in Z axis to avoid it shadowing the previous div.
+    -->
+    <div id="I-wrote-a-sonnet" class="step" data-x="-3000" data-y="2250" data-rotate="90" data-rotate-y="-30" data-z="-150" data-scale="5">
+      <div class="bookouter">
+        <img class="book_img" src="http://dgdsbygo8mp3h.cloudfront.net/sites/default/files/imagecache/productview_larger/2681OS.jpg" />
+        <div class="book_desc">
+          <p>I happen to be the author of</p>
+          <p><a href="http://www.amazon.com/Mastering-Apache-Cassandra-Nishant-Neeraj/dp/1782162682" target="_blank">Mastering Apache Cassandra</a></p>
+        </div>
+      </div>
     </div>
 
-		<!-- 
-			I wanted to create a pillar. Actually, I did create a complete pillar with 4 sides. 
-			But then it looked like I have written text over text. So, I created 2 sided long pillar.
+    <!-- 
+      I wanted to create a pillar. Actually, I did create a complete pillar with 4 sides. 
+      But then it looked like I have written text over text. So, I created 2 sided long pillar.
 
-			You see some cool rotations in 2-D plane. I rotated it in 2-D about 30 degrees and then
-			moved it to touch the corner of the leg that I created previously.
-		-->
+      You see some cool rotations in 2-D plane. I rotated it in 2-D about 30 degrees and then
+      moved it to touch the corner of the leg that I created previously.
+    -->
     <div id="how-cool-am-I" class="step" data-x="300" data-y="1300" data-rotate="30" data-scale="5">
         <p>A DepOps, start-up friendly guy.<br/>I work in multiple Dimensions:</p>
     </div>
@@ -105,14 +105,14 @@
         <p>Java, JS, nodeJS, MySQL, Cassandra, MongoDB, AWS, <a href="http://storm-project.net">Storm</a>, Web UX</p>    
     </div>
     
-		<!--
-			This is fun. Have you seen Inception? Yeah, the lousy movie with lots of glitches. (The Matrix?)
-			I <3 when stuff transition orthogonally from a plane that has every thing. Your eyes graze the 
-			vanishing point of the surface and you see nice projections. I can just pause at this view for minutes.
+    <!--
+      This is fun. Have you seen Inception? Yeah, the lousy movie with lots of glitches. (The Matrix?)
+      I <3 when stuff transition orthogonally from a plane that has every thing. Your eyes graze the 
+      vanishing point of the surface and you see nice projections. I can just pause at this view for minutes.
 
-			So, I rotated along X, 90 degrees. And along Y -30 degrees. I had to mention the axes separately because
-			I am 3D, just the data-rotate would not do.
-		-->
+      So, I rotated along X, 90 degrees. And along Y -30 degrees. I had to mention the axes separately because
+      I am 3D, just the data-rotate would not do.
+    -->
     <div id="the-orthogonal-plan" class="step" data-x="100" data-y="1646" data-z="-350"  data-scale="5"  data-rotate-x="-90" data-rotate-y="-30">
         <p>Anarchist engineer, turning into a data scientist. I am familiar with:</p>
     </div>
@@ -121,27 +121,27 @@
         <p>Machine Learning, Data Analysis, Octave, Python, Shell, R, Scala</p>
     </div>
         
-		<!--
-			Have you seen The Matrix? Yeah, I know. Remember The Matrix's opening scene? The viewport zooms through
-			zero down the rabbit hole. Yep. This is another effect I like.
-			
-			So, I placed the element with id="big-data-is-such-a-cliche" first. And then wrote this block.
+    <!--
+      Have you seen The Matrix? Yeah, I know. Remember The Matrix's opening scene? The viewport zooms through
+      zero down the rabbit hole. Yep. This is another effect I like.
+      
+      So, I placed the element with id="big-data-is-such-a-cliche" first. And then wrote this block.
 
-			This block is positioned about the center of one of the loops of "g" of Big but way down. So, you transition
-			through it.
+      This block is positioned about the center of one of the loops of "g" of Big but way down. So, you transition
+      through it.
 
-			"Knock, knock, Neo."
-		-->
-		<div id="the-alter-ego-speaks" class="step" data-x="5900" data-y="3200" data-z="-1900"  data-scale="1">
-				<p><img src="shovel.png"/><b class="mirror">B</b>uried somewhere deep down in his mind, lives <img src="evil_monkey.png"/> a creative animal.</p>
-				<p>He <span style="color:red;font-size:1.2em;">&hearts;</span> create stu<b class="mirror">f</b>fs, hack electron<img src="electricity.png"/>cs, <img src="cycle.png"/> learn <img src="coffee.png"/> new technolo<b class="mirror">g</b>ies <img src="skull.png"/> and is generally interested <img src="dog.png"/> in <img src="tree.png"/> drawin<b class="mirror">g</b>, music <img src="ear_plugs.png"/> and science <img src="bomb.png"/>.</p>
-			<p style="float:right;">&mdash;His Alter E<b class="mirror">g</b>o</p>
-    </div>
-		
-		<!--
-			Back to the original plane but what is fun if we come straight out? Want some spiral effect? Rotate.
+      "Knock, knock, Neo."
     -->
-		<div id="big-data-is-such-a-cliche" class="step" data-x="6500" data-y="3000" data-rotate="180" data-scale="5">
+    <div id="the-alter-ego-speaks" class="step" data-x="5900" data-y="3200" data-z="-1900"  data-scale="1">
+        <p><img src="shovel.png"/><b class="mirror">B</b>uried somewhere deep down in his mind, lives <img src="evil_monkey.png"/> a creative animal.</p>
+        <p>He <span style="color:red;font-size:1.2em;">&hearts;</span> create stu<b class="mirror">f</b>fs, hack electron<img src="electricity.png"/>cs, <img src="cycle.png"/> learn <img src="coffee.png"/> new technolo<b class="mirror">g</b>ies <img src="skull.png"/> and is generally interested <img src="dog.png"/> in <img src="tree.png"/> drawin<b class="mirror">g</b>, music <img src="ear_plugs.png"/> and science <img src="bomb.png"/>.</p>
+      <p style="float:right;">&mdash;His Alter E<b class="mirror">g</b>o</p>
+    </div>
+    
+    <!--
+      Back to the original plane but what is fun if we come straight out? Want some spiral effect? Rotate.
+    -->
+    <div id="big-data-is-such-a-cliche" class="step" data-x="6500" data-y="3000" data-rotate="180" data-scale="5">
         <p>I'm working on<b>big</b> <span class="thoughts">data stuffs</span></p>
     </div>
 
@@ -166,21 +166,21 @@
     -->
 
     <div id="I-am-unblinkingly-staring-at-the-screen-for-your-message" class="step" data-x="6500" data-y="800" data-rotate="270" data-scale="5">
-			<p>You'd probably want to contact me. Find me on:</p>
-			<p>
-			<a href="http://facebook.com/nishant.neeraj" title="Facebook" target="_blank" ><img src="fb.png" class="positioning" /></a>
-			<a href="http://linkedin.com/in/naishe" title="LinkedIn" target="_blank" ><img src="in.png" class="positioning" /></a>
-			<a href="http://twitter.com/naishe" title="Twitter" target="_blank" ><img src="tw.png" /></a>
-			<a href="http://code.naishe.in" title="Code Blog" target="_blank" ><img src="blogger.png" class="rotating" /></a>
-			<a href="http://github.com/naishe" title="GitHub" target="_blank" ><img src="github.png" /></a>
-			<a href="http://careers.stackoverflow.com/naishe" title="StackOverflow CV" target="_blank" ><img src="stackoverflow.png" /></a>
-			<a href="http://about.me/naishe" title="About Me" target="_blank" ><img src="aboutme.png" class="rotating" /></a>
-			<a href="skype:nishant_?chat" title="Skype" ><img src="skype.png" class="positioning" /></a>
-			</p>
-			<p class="credits">[Oh, you wanted to know how I created this presentation?<br/><a target="_blank" href="https://github.com/naishe/impress">Meet the source</a>.]</p>
-		</div>
+      <p>You'd probably want to contact me. Find me on:</p>
+      <p>
+      <a href="http://facebook.com/nishant.neeraj" title="Facebook" target="_blank" ><img src="fb.png" class="positioning" /></a>
+      <a href="http://linkedin.com/in/naishe" title="LinkedIn" target="_blank" ><img src="in.png" class="positioning" /></a>
+      <a href="http://twitter.com/naishe" title="Twitter" target="_blank" ><img src="tw.png" /></a>
+      <a href="http://code.naishe.in" title="Code Blog" target="_blank" ><img src="blogger.png" class="rotating" /></a>
+      <a href="http://github.com/naishe" title="GitHub" target="_blank" ><img src="github.png" /></a>
+      <a href="http://careers.stackoverflow.com/naishe" title="StackOverflow CV" target="_blank" ><img src="stackoverflow.png" /></a>
+      <a href="http://about.me/naishe" title="About Me" target="_blank" ><img src="aboutme.png" class="rotating" /></a>
+      <a href="skype:nishant_?chat" title="Skype" ><img src="skype.png" class="positioning" /></a>
+      </p>
+      <p class="credits">[Oh, you wanted to know how I created this presentation?<br/><a target="_blank" href="https://github.com/naishe/impress">Meet the source</a>.]</p>
+    </div>
 
-		<!-- I will let Bartaz speak. Afterall, he is the man (or the woman, I do not know). -->
+    <!-- I will let Bartaz speak. Afterall, he is the man (or the woman, I do not know). -->
 
     <!--
         
@@ -324,6 +324,6 @@ if ("ontouchstart" in document.documentElement) {
     
     Cheers!
 
-		And I am Nishant :) I stole Bartaz script to create mine. If you have seen this presentation, you must have
-		more than a way to contact me. But you can always ping me at Twitter as @naishe.
+    And I am Nishant :) I stole Bartaz script to create mine. If you have seen this presentation, you must have
+    more than a way to contact me. But you can always ping me at Twitter as @naishe.
 -->
