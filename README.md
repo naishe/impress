@@ -4,7 +4,7 @@ All the work that I have done is used impress.js to create a
 webpage. It is very simple and intuitive.
 
 You may want to see [my website](http://naishe.in) to see it in action.
-You can view the source code for this [here](http://github.com/naishe/impress).
+You can view the source code for this [here](https://github.com/naishe/impress/blob/master/index.html).
 
 I will let @bartaz guide you about impress.js
 
