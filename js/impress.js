@@ -174,8 +174,12 @@
                            
                           // and `classList` and `dataset` APIs
                            ( body.classList ) &&
+<<<<<<< HEAD
                            ( body.dataset ) 
     											&&
+=======
+                           ( body.dataset ) &&
+>>>>>>> master
                            
                           // but some mobile devices need to be blacklisted,
                           // because their CSS 3D support or hardware is not
